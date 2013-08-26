@@ -1,0 +1,59 @@
+#-----------------------------------------------------------------------------#
+#
+# 2. Root cursor, Windows Decoration and Menu Styles:
+#   Default fonts, colors, Border, Title, Button Styles, Menu Styles
+#   window button bindings.
+#   (this section may be the theme part of the config, but you need to use
+#    FvwmTheme to define and propagate the colors)
+#-----------------------------------------------------------------------------#
+
+#------------------------------------------------------------------------------
+# Set the root cursor
+#------------------------------------------------------------------------------
+
+CursorStyle ROOT         left_ptr
+CursorStyle TITLE        left_ptr
+CursorStyle DEFAULT      left_ptr
+CursorStyle SYS          left_ptr
+CursorStyle MENU         left_ptr
+
+################################################
+# Windows Decorations
+################################################
+DestroyDecor MyDecor
+AddToDecor   MyDecor
++ TitleStyle LeftJustified Height 30
++ ButtonStyle 1 \
+ActiveUp     (Pixmap $[FVWM_IMG]/decor/ice/close_activeup.png -- Flat) \
+ActiveDown   (Pixmap $[FVWM_IMG]/decor/ice/close_activedown.png -- Flat) \
+Inactive     (Pixmap $[FVWM_IMG]/decor/ice/inactive.png -- Flat)
++ ButtonStyle 5 \
+ActiveUp     (Pixmap $[FVWM_IMG]/decor/ice/iconify_activeup.png -- Flat) \
+ActiveDown   (Pixmap $[FVWM_IMG]/decor/ice/iconify_activedown.png -- Flat) \
+Inactive     (Pixmap $[FVWM_IMG]/decor/ice/inactive.png -- Flat)
++ ButtonStyle 3 \
+ActiveUp     (Pixmap $[FVWM_IMG]/decor/ice/maximize_activeup.png -- Flat) \
+ActiveDown   (Pixmap $[FVWM_IMG]/decor/ice/maximize_activedown.png -- Flat) \
+Inactive     (Pixmap $[FVWM_IMG]/decor/ice/inactive.png -- Flat)
++ ButtonStyle 1 - Clear
++ ButtonStyle 3 - Clear MwmDecorMin
++ ButtonStyle 5 - Clear MwmDecorMax
++ TitleStyle AllActive MultiPixmap \
+Main AdjustedPixmap $[FVWM_IMG]/decor/ice/title_active.png, \
+UnderText AdjustedPixmap $[FVWM_IMG]/decor/ice/titleunder_active.png, \
+LeftEnd AdjustedPixmap $[FVWM_IMG]/decor/ice/titleleft_active.png, \
+RightEnd AdjustedPixmap $[FVWM_IMG]/decor/ice/titleright_active.png, \
+LeftOfText AdjustedPixmap $[FVWM_IMG]/decor/ice/titlelt_active.png, \
+RightOfText AdjustedPixmap $[FVWM_IMG]/decor/ice/titlert_active.png
+
++ TitleStyle AllInactive MultiPixmap \
+Main AdjustedPixmap $[FVWM_IMG]/decor/ice/title_inactive.png, \
+UnderText AdjustedPixmap $[FVWM_IMG]/decor/ice/titleunder_inactive.png, \
+LeftEnd AdjustedPixmap $[FVWM_IMG]/decor/ice/titleleft_inactive.png, \
+RightEnd AdjustedPixmap $[FVWM_IMG]/decor/ice/titleright_inactive.png, \
+LeftOfText AdjustedPixmap $[FVWM_IMG]/decor/ice/titlelt_inactive.png, \
+RightOfText AdjustedPixmap $[FVWM_IMG]/decor/ice/titlert_inactive.png
+
++ TitleStyle -- Flat
++ BorderStyle Simple -- NoInset Flat
++ ButtonStyle All -- UseTitleStyle

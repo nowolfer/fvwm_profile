@@ -1,0 +1,47 @@
+DestroyModuleConfig FvwmButtonsLaunch: *
+*FvwmButtonsLaunch: Geometry 512x45+360-0
+*FvwmButtonsLaunch: Colorset 15
+#*FvwmButtonsLaunch: Pixmap None
+*FvwmButtonsLaunch: Rows 1
+*FvwmButtonsLaunch: Font None
+*FvwmButtonsLaunch: (Frame 3 Container(Rows 1 Columns 48 ))
+*FvwmButtonsLaunch: ( 1x1 frame 0 )
+*FvwmButtonsLaunch: ( 4x1 frame 0 Icon $[FVWM_IMG]/32x32/firefox.png, \
+        ActiveIcon $[FVWM_IMG]/24x24/firefox.png \
+	        Action(Mouse 1) 'FvwmFireFox')
+*FvwmButtonsLaunch: ( 4x1 frame 0 Icon $[FVWM_IMG]/32x32/rxvt.png, \
+        ActiveIcon $[FVWM_IMG]/24x24/rxvt.png \
+	        Action(Mouse 1) 'FvwmGimp')
+*FvwmButtonsLaunch: ( 4x1 frame 0 Icon $[FVWM_IMG]/32x32/gimp.png, \
+        ActiveIcon $[FVWM_IMG]/24x24/gimp.png \
+	                Action(Mouse 1) 'FvwmGimp')
+*FvwmButtonsLaunch: ( 4x1 frame 0 Icon $[FVWM_IMG]/32x32/acroread.png, \
+        ActiveIcon $[FVWM_IMG]/24x24/acroread.png \
+	                        Action(Mouse 1) 'FvwmAcroread')
+
+DestroyModuleConfig DockButtons: *
+
+*DockButtons: Geometry 512x45+250-0
+*DockButtons: Colorset 15
+*DcokButtons: Rows 2
+*DockButtons: Columns 30
+*DockButtons: (1x2, Frame 0)
+*DockButtons: (4x2, Frame 0, Icon 48x48/terminal.png, \
+              Action(Mouse 1) "FvwmATerm",
+	      Action(Mouse 3) "FvwmXTerm")
+*DockButtons: (4x2, Frame 0, Icon 48x48/firefox.png, \
+              Action(Mouse 1) "FvwmFireFox")
+*DockButtons: (4x2, Frame 0, Icon 48x48/xmms.png, \
+              Action(Mouse 1) "FvwmXmms")
+*DockButtons: (4x2, Frame 0, Icon 48x48/gimp.png, \
+              Action(Mouse 1) "FvwmGimp")	
+*DockButtons: (4x2, Frame 0, Icon 48x48/editor.png, \
+              Action(Mouse 1) "FvwmGVim")
+*DockButtons: (8x1, Frame 0, \
+	      Swallow FvwmApplet-DigitalClock \
+	      `FvwmScript $[fvwm_scrpt]/DigitalClock 16`)
+*DockButtons: (2x1, Frame 0, Icon 32x32/cpumon.png)
+*DockButtons: (2x1, Frame 0, Icon 32x32/memmon.png)
+*DockButtons: (2x1, Frame 0, Icon 32x32/diskmon.png)
+*DockButtons: (2x1, Frame 0, Icon 32x32/netmon.png)
+*DockButtons: (1x2, Frame 0)

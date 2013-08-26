@@ -1,0 +1,16 @@
+DestroyModuleConfig FvwmAnimate: *
+*FvwmAnimate: Color white
+#*FvwmAnimate: Effect frame
+*FvwmAnimate: Delay 2
+*FvwmAnimate: Iterations 30
+*FvwmAnimate: Width 3
+
+##########################################################
+#
+# FvwmIdent
+#
+##########################################################
+DestroyModuleConfig FvwmIdent: *
+*FvwmIdent: Colorset 9
+*FvwmIdent: Font "xft:Sans:Bold:size=12:antialias=True"
+

@@ -1,0 +1,55 @@
+#------------------------------------------------------------------------------#
+#                                                                              #
+# Start the SHOW!                                                              #
+#                                                                              #
+#------------------------------------------------------------------------------#
+
+
+################################################################################
+## Set Environment variables                                                  ##
+################################################################################
+SetEnv FVWM_HOME $[HOME]/.fvwm/personal_configs
+SetEnv FVWM_IMG $[FVWM_HOME]/images
+SetEnv FVWM_ICON $[FVWM_HOME]/icons
+SetEnv FVWM_SCRIPT $[FVWM_HOME]/scripts
+SetEnv FVWM_CONFIG $[FVWM_HOME]/configs
+SetEnv FVWM_WALLPAPERS $[FVWM_IMG]/wallpapers
+
+################################################################################## Set images path
+################################################################################
+ImagePath $[FVWM_WALLPAPERS]:$[FVWM_ICON];.png:+
+
+
+##################################################
+# Read config files
+##################################################
+
+Read $[FVWM_CONFIG]/globalfeel
+
+Read $[FVWM_CONFIG]/decorations
+
+Read $[FVWM_CONFIG]/windowlook
+
+Read $[FVWM_CONFIG]/colorsets
+
+Read $[FVWM_CONFIG]/startup
+
+Read $[FVWM_CONFIG]/styles
+
+Read $[FVWM_CONFIG]/functions
+
+Read $[FVWM_CONFIG]/bindings
+
+Read $[FVWM_CONFIG]/buttonslaunch
+
+Read $[FVWM_CONFIG]/menus
+
+Read $[FVWM_CONFIG]/modules
+
+Read $[FVWM_CONFIG]/strokes
+
+#-----------------------------------------------------------------------------#
+##
+## THAT'S ALL FOLKS!!
+##
+##-----------------------------------------------------------------------------#

@@ -1,0 +1,30 @@
+DestroyFunc StartFunction
+AddToFunc StartFunction
+# + I Module FvwmTaskBar
+# + I Module FvwmPager 0 2
+# + I Module FvwmButtons FvwmButtonsLaunch
++ I Exec exec fvwm-root $[FVWM_WALLPAPERS]/sky.png
+# + I Exec exec conky
+# + I Test (Init) Exec root-tail -g 650x100+500-50 -color blue -font cure -wordwrap /var/log/messages
+# + I Exec exec gkrellm -geometry 160x160-10+10
+# + I Exec exec xclock -bg green -update 1 -geometry 160x160-10+10 
+
+DestroyFunc ExitFunction
+AddToFunc ExitFunction
+#+       I       KillModule FvwmButtons
+#+       I       kill gkrellm
+#+       I       KillModule FvwmAnimate
+
+DestroyFunc InitFunction
+AddToFunc InitFunction
+# + I Exec exec fvwm-root $[FVWM_WALLPAPERS]/bg.jpg
+# + I Exec exec xscreensaver
+# + I Test (Init) Exec tail -g 650x100+500-50 -color blue -font cure -wordwrap /var/log/messages
+# + I Nop
+# + I FuncFvwmStartThemeBackground
+# FuncFvwmStartThemeBackground
+### For some SM-s (like gnome-session) there is an internal background setter.
+DestroyFunc SessionInitFunction
+AddToFunc SessionInitFunction
+ + I Nop
+

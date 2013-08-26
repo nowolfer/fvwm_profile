@@ -1,0 +1,28 @@
+Key F1 A C Menu MenuFvwmRoot
+Key F2 A C FvwmRox
+Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
+#Key Super_L A A FvwmATerm
+Mouse 3 R A Menu FvwmRootMenu
+Mouse 1 R A Menu None
+Mouse 1 1 A FvwmDeleteOrDestroy
+Mouse 1 5 A FvwmIconifyOrShade
+Mouse 1 3 A FvwmMaximize 100 100
+Mouse 2 3 A FvwmMaximize 0 100
+Mouse 3 3 A FvwmMaximize 100 0
+Mouse 1 W M FvwmMoveOrIconify
+Mouse 1 I A FvwmMoveOrIconify
+Mouse 4 T A FvwmWindowShade True
+Mouse 5 T A FvwmWindowShade False
+
+Key F1 A M GotoPage 0 0
+Key F2 A M GotoPage 0 1
+Key F3 A M GotoPage 1 0
+Key F4 A M GotoPage 1 1
+
+Key F5 A M Module FvwmConsole -terminal rxvt -geometry 45x5-0+0 \
+	-bg gold -fg midnightblue \
+		-fn "-adobe-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
+
+
+
+

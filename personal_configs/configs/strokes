@@ -1,0 +1,29 @@
+##################################################
+#
+#   7 8 9
+#   4 5 6
+#   1 2 3
+#
+####################################################
+#Stroke bindings
+Stroke N78963 0 A C FvwmAcroread
+
+Stroke N98741 0 A C FvwmFireFox
+
+Stroke N74123 0 A C FvwmPidgin
+
+Stroke N9874123 0 A C FvwmEclipse
+
+Stroke N7896321 0 A C FvwmKonsole
+
+#Drag mouse on the root window
+Mouse 1 R N StrokeFunc DrawMotion 
+
+#Drag mouse with Ctrl key
+Mouse 1 A C StrokeFunc DrawMotion
+
+#Drag mouse on the border
+#Mouse 1 TSF N StrokeFunc DrawMotion
+
+#Drag mouse 1 on the maxmize button
+#Mouse 1 2 N StrokeFunc DrawMotion 

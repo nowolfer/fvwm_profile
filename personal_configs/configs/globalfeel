@@ -1,0 +1,46 @@
+#################################################################################
+# Globalfeel
+#
+################################################################################
+EdgeResistance 250 10
+EdgeScroll 0 0
+ClickTime 350
+MoveThreshold 3
+
+DeskTopSize 2x2
+DeskTopName 0 Main
+DeskTopName 1 Work
+DeskTopName 2 Games
+DeskTopName 3 Internet
+
+SetEnv LemonFont "xft:Microsoft YaHei:size=10"
+
+Style * SloppyFocus, MouseFocusClickRaises
+EwmhBaseStruts 0 0 0 0
+IgnoreModifiers L25
+
+##############################
+## Global Styles and options
+##############################
+Style * TileCascadePlacement, GrabFocusOff
+Style * NoPPosition, ResizeOpaque
+OpaqueMoveSize -1
+Emulate MWM
+HideGeometryWindow Never
+SnapAttraction 5 SameType Screen
+SnapGrid 3 3
+XorValue 55555
+Style * DecorateTransient, DontRaiseTransient
+Style * DontLowerTransient, StackTransientParent
+Style * GrabFocusTransientOff
+Style * WindowShadeSteps 20, WindowShadeScrolls
+SetAnimation  10  -.01 0 .01 .03 .08 .18 .3 .45 .6 .75 .85 .90 .94 .97 .99 1.0
+Style * MwmDecor, SlipperyIcon
+Style * IconBox screen w 15 15 -165 -15, IconGrid 3 3, IconFill right top
+
+
+#Menustyle * fvwm, Font -adobe-times-bold-r-*-*-14-*-*-*-*-*-*-*
+MenuStyle * Foreground maroon, Background grey60, Greyed grey40
+
+ColormapFocus FollowsMouse
+

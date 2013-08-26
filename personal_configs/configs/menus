@@ -1,0 +1,112 @@
+######################## Initialization Functions ##############################
+
+#################################### Menus #####################################
+DestroyMenu FvwmRootMenu
+AddToMenu FvwmRootMenu      "Root Menu"     Title
++                       "Tilda%$[FVWM_ICON]/menu/terminal.png%" \
+                        FvwmTilda
++                       ""              Nop
++                       "Internet"      Popup FvwmInternet
++                       ""              Nop
++                       "Programs"       Popup FvwmPrograms
++                       ""              Nop
++                       "Tools"   Popup FvwmTools
++                       ""              Nop
++                       "Art"     Popup  FvwmArt
++                       ""              Nop
++                       "Electric" Popup FvwmElectric
++                       ""              Nop
++                       "Office"  Popup FvwmOffice
++                       ""              Nop
++                       "Refresh Screen"   Refresh
++                       "Recapture Screen" Recapture
++                       ""              Nop
++                       "WindowTools" Popup  FvwmWindowTools
++                       ""              Nop
+#+                       "Help%$[FVWM_ICON]/menu/help.png%"  \
+#                        Popup FvwmManPagesMenu
++                       "&Restart FVWM%$[FVWM_ICON]/menu/restart.png%"  Restart
++                       "&Quit FVWM%$[FVWM_ICON]/menu/quit.png%"  Quit
+
+
+DestroyMenu FvwmTools
+AddToMenu FvwmTools
++                       "&Xpdf"          FvwmXpdf
++                       "&Adobe Reader"  FvwmAcroread
++                       "&Virtual Box"   FvwmVirtualBox
++                       "&Rox"           FvwmRox
++                       "&Stardict"      FvwmSTARDICT
+
+DestroyMenu FvwmInternet
+AddToMenu FvwmInternet  
++                       "&FireFox%$[FVWM_ICON]/menu/firefox.png%"  FvwmFireFox
++                       "&Pidgin"        FvwmPidgin
++                       "&Chromium"      FvwmChromium
++                       "Amule"          FvwmAmule
+
+DestroyMenu FvwmPrograms
+AddToMenu FvwmPrograms 
++                       "Eclipse&Ronch"     FvwmEclipseRonch
++                       "Eclipse&Dawn"     FvwmEclipseDawn
++                       "E&ric"           FvwmEric
++                       "&Structure101 Java" Structure101_Java
++                       "E&macs"          FvwmEmacs
++                       "&Gvim"           FvwmGvim
++                       "&Code::Blocks"           FvwmCodeBlocks
++                       "Argouml"         FvwmARGOUML
+
+DestroyMenu FvwmArt   
+AddToMenu FvwmArt       
++                       "&Blender"        FvwmBlender
++                       "&Gimp"           FvwmGIMP
++                       "&Inkscape"       FvwmInkscape
+
+DestroyMenu FvwmElectric
+AddToMenu FvwmElectric  
++                       "&Electric"        FvwmElectric
++                       ""                 Nop
++                       "GEDA"             Popup FvwmGEDA
++                       ""                 Nop
++                       "&Kicad"           FvwmKICAD
++                       "Eagle"            FvwmEAGLE
+
+DestroyMenu FvwmGEDA
+AddToMenu FvwmGEDA 
++                       "G&spiceUI"        FvwmGSPICEUI
++                       "Gsche&m"          FvwmGSCHEM
++                       "&PCB"             FvwmPCB
++                       "&Gerbv"           FvwmGERBV
++                       "Gtk&wave"         FvwmGTKWAVE
+
+DestroyMenu FvwmOffice  
+AddToMenu FvwmOffice   
++                        "&LibreOffice"       FvwmLibreOffice
+#############################################################
+#
+# Fvwm Window Operation Menu
+#
+#############################################################
+DestroyMenu FvwmWindowTools
+AddToMenu   FvwmWindowTools "Window Operations" Title
++ "Move%menu/window-move.xpm%"  Move
++ "Resize%menu/window-resize.xpm%"  Resize
++ "(De)Iconify%menu/window-iconify.xpm%"  Iconify
++ "(Un)Maximize%menu/window-maximize.xpm%"  Maximize
++ "(Un)Shade%menu/window-shade.xpm%"  WindowShade
++ "(Un)Stick%menu/window-stick.xpm%"  Stick
++ "" Nop
++ "Close%menu/window-close.xpm%"  Close
++ "Delete%menu/window-delete.xpm%"  Delete
++ "Destroy%menu/window-destroy.xpm%"  Destroy
++ "" Nop
++ "StaysOnTop%menu/window-raise.xpm%"  Pick (CirculateHit) Layer 0 6
++ "Layer +1%menu/window-raise.xpm%"  Pick (CirculateHit) Layer +1
++ "StaysPut%menu/window.xpm%"  Pick (CirculateHit) Layer 0 4
++ "Layer -1%menu/window-lower.xpm%"  Pick (CirculateHit) Layer -1
++ "StaysOnBottom%menu/window-lower.xpm%"  Pick (CirculateHit) Layer 0 2
++ "" Nop
++ "%menu/window.xpm%Window Screenshot"  Pick (CirculateHit) FvwmWindowScreenshot
++ "%menu/display.xpm%Screenshot" FvwmDesktopScreenshot 5
++ "" Nop
++ "Identify%menu/window-identify.xpm%"  Module FvwmIdent
+

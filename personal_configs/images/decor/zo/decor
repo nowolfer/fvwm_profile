@@ -1,0 +1,8 @@
+BorderStyle -- HiddenHandles !NoInset Raised
+TitleStyle LeftJustified Height 25
+Style * Font         -*-arial-bold-r-normal-*-10-*-*-*-*-*-*
+Style * HandleWidth  4
+Style * ForeColor    #B0B0B0
+Style * BackColor    #808080
+Style * HilightFore  #D0D0D0
+Style * HilightBack  #909090

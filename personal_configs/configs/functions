@@ -1,0 +1,175 @@
+######################## Sample Functions ######################################
+#####
+##
+## DestroyFunc FuncName
+## AddToFunc   FuncName
+## + I (立刻执行)
+## + C (点击时执行)
+## + D (双击时执行)
+## + H (按住时执行)
+## + M (移动时执行)
+##
+############
+
+#################################
+## Basic Functions
+#################################
+DestroyFunc FvwmDeleteOrDestroy
+AddToFunc   FvwmDeleteOrDestroy
++ H Nop
++ M Nop
++ C Delete
++ D Destroy
+
+DestroyFunc FvwmIconifyOrShade
+AddToFunc   FvwmIconifyOrShade
++ C Iconify
++ D WindowShade
+
+DestroyFunc FvwmMaximize
+AddToFunc   FvwmMaximize
++ H Nop
++ M Nop
++ C Maximize $0 $1
+
+DestroyFunc FvwmMoveOrIconify
+AddToFunc   FvwmMoveOrIconify
++ M Move
++ D Iconify
+
+DestroyFunc FvwmWindowShade
+AddToFunc   FvwmWindowShade
++ D WindowShade $0
+
+##################################################
+#
+# Program Launching Functions
+#
+##################################################
+DestroyFunc FvwmTilda
+AddToFunc   FvwmTilda
++ I Exec exec tilda
+
+DestroyFunc FvwmFireFox
+AddToFunc   FvwmFireFox
++ I Exec exec firefox
+
+DestroyFunc FvwmChromium
+AddToFunc   FvwmChromium
++ I Exec exec chromium
+
+DestroyFunc FvwmPidgin
+AddToFunc   FvwmPidgin
++ I Exec exec pidgin
+
+DestroyFunc FvwmEric
+AddToFunc   FvwmEric
++ I Exec exec eric5
+
+DestroyFunc FvwmEmacs
+AddToFunc   FvwmEmacs
++ I Exec exec emacs
+
+DestroyFunc FvwmGvim
+AddToFunc   FvwmGvim
++ I Exec exec gvim
+
+DestroyFunc FvwmCodeBlocks
+AddToFunc   FvwmCodeBlocks
++ I Exec exec codeblocks
+
+DestroyFunc FvwmVirtualBox
+AddToFunc   FvwmVirtualBox
++ I Exec exec VirtualBox
+
+DestroyFunc FvwmAcroread
+AddToFunc   FvwmAcroread
++ I Exec exec acroread
+
+DestroyFunc FvwmXpdf
+AddToFunc   FvwmXpdf
++ I Exec exec xpdf
+
+DestroyFunc FvwmRxvt
+AddToFunc   FvwmRxvt
++ I Exec exec rxvt
+
+DestroyFunc FvwmGimp
+AddToFunc   FvwmGimp
++ I Exec exec gimp
+
+DestroyFunc FvwmInkscape
+AddToFunc   FvwmInkscape
++ I Exec exec inkscape
+
+DestroyFunc FvwmRox
+AddToFunc   FvwmRox
++ I Exec exec rox
+
+DestroyFunc Structure101_Java
+AddToFunc   Structure101_Java
++ I Exec exec structure101_for_java
+
+DestroyFunc FvwmLibreOffice
+AddToFunc   FvwmLibreOffice
++ I Exec exec libreoffice
+
+DestroyFunc FvwmAmule
+AddToFunc   FvwmAmule
++ I Exec exec amule
+
+DestroyFunc FvwmEclipseRonch
+AddToFunc   FvwmEclipseRonch
++ I Exec exec eclipse_ronch
+
+DestroyFunc FvwmBlender
+AddToFunc   FvwmBlender
++ I Exec exec blender
+
+DestroyFunc FvwmGIMP
+AddToFunc   FvwmGIMP
++ I Exec exec gimp
+
+DestroyFunc FvwmElectric
+AddToFunc   FvwmElectric
++ I Exec exec electric
+
+DestroyFunc FvwmGSCHEM
+AddToFunc   FvwmGSCHEM
++ I Exec exec gschem
+
+DestroyFunc FvwmGSPICEUI
+AddToFunc   FvwmGSPICEUI
++ I Exec exec gspiceui
+
+DestroyFunc FvwmPCB
+AddToFunc   FvwmPCB
++ I Exec exec pcb
+
+DestroyFunc FvwmGERBV
+AddToFunc   FvwmGERBV
++ I Exec exec gerbv
+
+DestroyFunc FvwmGTKWAVE
+AddToFunc   FvwmGTKWAVE
++ I Exec exec gtkwave
+DestroyFunc FvwmKICAD
+AddToFunc   FvwmKICAD
++ I Exec exec kicad
+
+DestroyFunc FvwmEAGLE
+AddToFunc   FvwmEAGLE
++ I Exec exec eagle
+
+DestroyFunc FvwmSTARDICT
+AddToFunc FvwmSTARDICT
++ I Exec exec stardict
+
+DestroyFunc FvwmARGOUML
+AddToFunc FvwmARGOUML
++ I Exec exec argouml
+####################################################
+#
+# System tools
+#
+####################################################

@@ -1,0 +1,67 @@
+####################
+#
+# Window colorset
+#
+####################
+Colorset 3 fg #101060, bg #e6e7d7
+Colorset 4 fg Black, bg #a6a797
+Colorset 5 fg White, bg Black
+
+#################################################################################
+# Windows decorations
+#
+################################################################################
+Style "*" UseDecor MyDecor
+
+Style "*" Font "xft:Microsoft YaHei:style=Normal:size=10"
+Style * HandleWidth  3
+Style * ForeColor    #E0E0E0
+Style * BackColor    #808080
+Style * HilightFore  #FFFFFF
+Style * HilightBack  #909090
+
+Style "*" !Borders
+################################################################################
+#
+# Menu Styles
+#
+################################################################################
+Menustyle "*" MWM
+MenuStyle "*" PopupDelayed, PopupDelay 160, Animation, TitleWarp
+MenuStyle "*" Foreground gold, Background gray40
+MenuStyle "*" ActiveFore White
+MenuStyle "*" Font "xft:Bitstream Vera Sans:style=Normal:size=10"
+MenuStyle "*" MenuFace VGradient 64 darkgray MidnightBlue
+
+################################################################################
+#
+# LaunchButtons
+#
+################################################################################
+Style "FvwmButtonsLaunch" !Title, !Handles, Sticky, WindowListSkip, \
+CirculateSkip, BorderWidth 0, HandleWidth 0
+
+################################################################################
+#
+# Some personal application style
+#
+################################################################################
+#Style "*lock" NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus
+Style dock !Title, !Borders, !Iconifiable, Sticky, StaysOnBottom
+Style "*lock" UseStyle dock
+
+Style * IconBox  5 15 245 -200, IconGrid 20 20,IconSize 48 48, MouseFocusClickRaises, IconFill t l
+
+Style * !IconTitle, IconTitleRelief 0, IndexedIconName, IconBackgroundPadding 0, IconBackgroundRelief 0
+
+Style rox NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus
+
+##################################################################################
+# Cursor style
+#
+################################################################################
+CursorStyle ROOT left_ptr
+CursorStyle TITLE left_ptr
+CursorStyle DEFAULT left_ptr
+CursorStyle SYS left_ptr
+CursorStyle MENU left_ptr

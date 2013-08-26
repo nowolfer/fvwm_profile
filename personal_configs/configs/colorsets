@@ -1,0 +1,30 @@
+####################################
+## Menu Colorsets
+####################################
+#Colorset 7 RootTransparent, fg Black, bg average, sh Black, \
+  hi #202070, Tint White 60, bgTint White 60
+
+####################
+## Window Colorsets
+####################
+#Colorset 3 fg #101060, bg #e6e7d7
+#Colorset 4 fg Black, bg #a6a797
+#Colorset 5 fg White, bg Black
+
+Colorset 7 fg Black, Translucent White 75, \
+  hi Black, sh Black
+Colorset 8 fg Red, Translucent Black 75, \
+  hi Red, sh Red
+#Colorset 7 fg Black, bg #e6e7d7, sh Black, hi #202070
+#Colorset 8 fg DarkRed, bg #e6e7d7, sh Black, hi #202070
+#Colorset 8 RootTransparent, fg Black, bg average, sh Black, \
+  hi #404090, Tint White 60, bgTint White 60
+Colorset 9 fg rgb:00/00/00, hi rgb:00/00/00, sh rgb:00/00/00, bg rgb:e9/e9/d9
+Colorset 10 fg rgb:00/00/00, hi rgb:dd/00/00, sh rgb:dd/00/00, bg rgb:fb/fc/ec
+
+Colorset 15 RootTransparent, fg rgb:00/00/00, bg average, \
+Tint white 40, bgTint white 40, RootTransparent, \
+Shape dock-mask.xpm
+Colorset 16 RootTransparent, fg rgb:00/00/00, bg average, \
+Tint white 40, bgTint white 40, RootTransparent
+
